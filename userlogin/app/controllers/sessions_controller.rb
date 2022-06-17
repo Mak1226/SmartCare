@@ -8,8 +8,8 @@ class SessionsController < ApplicationController
        session[:user_id] = user.id
        redirect_to root_url, notice: "Success 200 OK"
      else
-       redirect_to login_path
-       flash.now[:alert] = "Fail 200 OK"
+       redirect_to login_path, notice: "Failed 200 OK"
+      #  flash.now[:alert] = "Fail 200 OK"
      end
    end
    def destroy

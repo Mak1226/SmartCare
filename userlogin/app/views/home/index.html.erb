@@ -1,5 +1,6 @@
+<h1>HOMEPAGE</h1>
 <% if current_user %>
- Logged in as <%= current_user.email %>.
+ Logged in as:  <%= current_user.email %>
  <br>
  <%= link_to 'Log Out', logout_path %>
 <% else %>
